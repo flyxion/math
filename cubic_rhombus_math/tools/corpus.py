@@ -67,13 +67,6 @@ def slug(title):
     return s
 
 
-def release_date(mid):
-    h = int(hashlib.sha256(mid.encode()).hexdigest()[:8], 16) % 14
-    day = 23 + h
-    if day <= 30:
-        return f"September-{day}-2026"
-    return f"October-{day - 30}-2026"
-
 
 def sha256_text(s):
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -252,7 +245,7 @@ def generate(a_):
         m = dict(p)
         m.update({"id": mid, "family": fam_no[fk], "title": title,
                   "title_tex": title.replace("&", r"\&"),
-                  "dir": f"{slug(title)}-{release_date(mid)}",
+                  "dir": slug(title),
                   "class": index[(p["t"], p["dim"])]})
         manuscripts.append(m)
 
