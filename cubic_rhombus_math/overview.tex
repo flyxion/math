@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\input{lib/preamble}
+\title{Overview of the Cubic Rhombus Research Initiative}
+\author{Flyxion}
+\date{Release 1.0}
+\begin{document}
+\maketitle
+\section{What the release contains}
+The release contains 14,000 manuscripts in 280 nominal families. Each manuscript is a proposition about one object, the cubic rhombus $R_n(c)$ with Gram matrix $(1-c)I+cJ$, under a title that carries seven parameters. The parameter space has 967,680 points: 7 dimensions, 8 geometries, 5 topologies, 6 regularities, 8 boundary conditions, 9 proof techniques and 8 contributions.
+
+\section{Which parameters are used}
+Two parameters, the dimension and the contribution, select the proposition proved. The other five are carried in the title and are not used by any proof. A point of the parameter space is therefore determined, as far as mathematical content is concerned, by one of $7\times8=56$ pairs. Each pair has $17{,}280$ preimages.
+
+\section{Statement classes}
+For each of the 56 pairs the generator computes the exact content of the proposition: closed forms, domains, ranks, coefficients and fibre counts, computed from explicit matrices for $n\le6$ and from closed forms for general $n$. Two pairs are placed in one class when their contents coincide, or when the content for a specific dimension is obtained from the general $n$ content by substitution. The result is 14 classes.
+
+\begin{center}
+\small
+\begin{tabular}{llrr}
+\toprule
+Class & Scope & In release & Parameter points \\
+\midrule
+S01 & general n & 1,490 & 103,680 \\
+S02 & general n & 3,030 & 207,360 \\
+S03 & general n & 1,465 & 103,680 \\
+S04 & general n & 1,513 & 103,680 \\
+S05 & general n & 1,510 & 103,680 \\
+S06 & general n & 1,744 & 120,960 \\
+S07 & general n & 1,224 & 86,400 \\
+S08 & n = 2 only & 259 & 17,280 \\
+S09 & infinite dimension & 254 & 17,280 \\
+S10 & infinite dimension & 514 & 34,560 \\
+S11 & infinite dimension & 256 & 17,280 \\
+S12 & infinite dimension & 260 & 17,280 \\
+S13 & infinite dimension & 228 & 17,280 \\
+S14 & infinite dimension & 253 & 17,280 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{description}
+\item[S01] T1: existence, uniqueness up to orthogonal maps, and the positivity range of the Gram matrix.
+\item[S02] T2: volume is at most 1, with equality only for the unit cube; T3: the cube is the unique maximizer and unique critical point of the volume.
+\item[S03] T4: second and third order expansion of the log volume at the cube.
+\item[S04] T5: rank of the edge system at interior and endpoint values of the parameter.
+\item[S05] T6: facets are lower dimensional members of the family, and the boundary determines the parameter exactly when n is at least 3.
+\item[S06] T7: exact value of det G\_n(a/n) and its limit (1+a)exp(-a).
+\item[S07] T8: volume takes each value in (0,1) exactly twice, with shape consequences that depend on n.
+\item[S08] T8: volume takes each value in (0,1) exactly twice, with shape consequences that depend on n (in dimension 2 the partner of c is -c, and R\_2(c), R\_2(-c) are congruent).
+\item[S09] T1: unit vector systems with equal inner products exist for 0 <= c <= 1, and the Gram operator is bounded on l2 only for c = 0.
+\item[S10] T2: limiting volume is 1 at c = 0 and 0 for 0 < c < 1; T3: the cube is the unique maximizer of the limiting volume.
+\item[S11] T4: the quadratic coefficient of the log volume diverges with the dimension.
+\item[S12] T5: for 0 <= c < 1 the system is linearly independent and fits in no finite dimensional space.
+\item[S13] T6: for every finite section of order at least 3 the boundary determines c.
+\item[S14] T8: the limiting volume is constant on (0,1), so volume does not determine c.
+\end{description}
+
+\section{Redundancy}
+The 967,680 parameter points carry 14 distinct statements, a ratio of 69,120 to $1$. The 14,000 manuscripts of this release carry 14 of them. These ratios are computed, not estimated.
+
+\section{What this overview does not show}
+It does not show that any of the 14 statements is new, interesting, or significant. It does not show that the classification is the only reasonable one. It does not support the hypothesis that the manuscripts of this release are independent mathematical contributions.
+\end{document}

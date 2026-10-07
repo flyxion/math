@@ -1,0 +1,12 @@
+\begin{theorem}[Embedding obstructions]\label{thm:main}
+Let $n=6$. For $- \frac{1}{5}<c<1$ the $n$ edge vectors of $R_n(c)$ are linearly independent, so $R_n(c)$ has nonempty interior and does not embed isometrically in $\R^m$ for any $m<n$.
+At $c=- \frac{1}{5}$ the edge vectors satisfy $v_1+\dots+v_n=0$ and span a space of dimension $5$.
+At $c=1$ they all coincide and span a space of dimension $1$.
+\end{theorem}
+\begin{proof}
+The rank of the matrix $V$ with columns $v_i$ equals the rank of $G_n(c)=V^\T V$.
+By Lemma~\ref{lem:spec} the eigenvalues are $1+(n-1)c$ once and $1-c$ with multiplicity $n-1$.
+For $c$ strictly between the endpoints both are positive and the rank is $n$.
+At $c=- \frac{1}{5}$ the first eigenvalue vanishes and the rank is $n-1$; moreover $|v_1+\dots+v_n|^2=\mathbf 1^\T G_n(c)\mathbf 1=n(1+(n-1)c)=0$.
+At $c=1$ the second eigenvalue vanishes with multiplicity $n-1$ and the rank is $1$.
+\end{proof}

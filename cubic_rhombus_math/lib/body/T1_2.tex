@@ -1,0 +1,11 @@
+\begin{theorem}[Existence and uniqueness]\label{thm:main}
+Let $n=2$. Then $\det G_n(c)=\left(1 - c\right) \left(c + 1\right)$ and $G_n(c)$ is positive definite if and only if $-1<c<1$.
+For every such $c$ there is a cubic rhombus $R_n(c)$, and any two cubic rhombi with the same $(n,c)$ differ by an orthogonal transformation of $\R^n$.
+If $c<-1$ or $c>1$ there is no system of $n$ unit vectors with pairwise inner product $c$.
+\end{theorem}
+\begin{proof}
+The determinant and the range of positivity are Lemma~\ref{lem:spec}.
+If $G_n(c)$ is positive definite it has a Cholesky factorization $G_n(c)=V^\T V$ with $V$ invertible, and the columns of $V$ are unit vectors with the required inner products. This gives existence.
+If $W$ is another matrix with $W^\T W=G_n(c)$, put $Q=WV^{-1}$. Then $Q^\T Q=V^{-\T}G_n(c)V^{-1}=I$, so $Q$ is orthogonal and $W=QV$. This gives uniqueness.
+Finally, the Gram matrix of any system of vectors is positive semidefinite, so a system exists only if both eigenvalues in Lemma~\ref{lem:spec} are nonnegative, that is, only if $-1\le c\le1$.
+\end{proof}

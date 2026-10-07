@@ -1,0 +1,9 @@
+\begin{theorem}[A counterexample to volume rigidity]\label{thm:main}
+Let $n=2$. The map $c\mapsto\vol_nR_n(c)$ is not injective: for every $v\in(0,1)$ there are exactly two values $c_-\in(-1,0)$ and $c_+\in(0,1)$ with $\vol_nR_n(c_\pm)=v$.
+Here $c_-=-c_+$. However $R_2(c_+)$ and $R_2(-c_+)$ are congruent, since a rhombus with angle $\theta$ also has angle $\pi-\theta$. So in dimension $2$ this is a counterexample to the injectivity of $c\mapsto\vol_2R_2(c)$ only, and not a counterexample to the claim that the area determines the shape.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:dlog}, $F$ is strictly increasing on $(-1,0]$ and strictly decreasing on $[0,1)$, with $F(0)=0$, and $F(c)\to-\infty$ at both endpoints of the interval, because $\det G_n(c)\to0$ there.
+Hence $\vol=e^{F/2}$ maps each of the two open branches bijectively onto $(0,1)$, which gives exactly one solution on each side of $0$.
+For $n=2$, $\det G_2(c)=1-c^2$ is even in $c$, so $c_-=-c_+$. A rhombus with unit sides is determined up to congruence by the angle $\theta$ between two adjacent sides, and it has the angle $\pi-\theta$ at its other two vertices. So the rhombus with angle $\theta$ and the rhombus with angle $\pi-\theta$ are the same rhombus, and $\cos(\pi-\theta)=-\cos\theta$ gives $R_2(c)\cong R_2(-c)$.
+\end{proof}

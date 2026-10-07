@@ -1,0 +1,8 @@
+\begin{theorem}[Boundary rigidity]\label{thm:main}
+Let $n=5$. Every facet of $R_n(c)$ is isometric to $R_{4}(c)$.
+The intrinsic piecewise flat metric of the boundary of $R_n(c)$ determines $c$, and hence determines $R_n(c)$ up to congruence.
+\end{theorem}
+\begin{proof}
+The facet statement is Lemma~\ref{lem:facet}.
+Two edges at a vertex lie in a common flat $2$-face, so the intrinsic metric of the boundary determines the angle between any two edges at any vertex, hence the Gram matrices $D_\varepsilon G_n(c)D_\varepsilon$ of Lemma~\ref{lem:vertex} at all vertices, up to permutation of the edges. The vertex $S=\emptyset$ has all off-diagonal entries equal to $c$. By Lemma~\ref{lem:vertex}, any vertex whose off-diagonal entries are all equal has that common value $c$, so $c$ is read off from the boundary. The pair $(n,c)$ determines $R_n(c)$ up to an orthogonal map by the Cholesky argument: if $W^\T W=V^\T V$ with $V$ invertible then $W=QV$ with $Q=WV^{-1}$ orthogonal.
+\end{proof}

@@ -1,0 +1,9 @@
+\begin{theorem}[A counterexample to volume rigidity]\label{thm:main}
+Let $n=5$. The map $c\mapsto\vol_nR_n(c)$ is not injective: for every $v\in(0,1)$ there are exactly two values $c_-\in(- \frac{1}{4},0)$ and $c_+\in(0,1)$ with $\vol_nR_n(c_\pm)=v$.
+The bodies $R_n(c_-)$ and $R_n(c_+)$ are not congruent, so volume does not determine the shape.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:dlog}, $F$ is strictly increasing on $(- \frac{1}{4},0]$ and strictly decreasing on $[0,1)$, with $F(0)=0$, and $F(c)\to-\infty$ at both endpoints of the interval, because $\det G_n(c)\to0$ there.
+Hence $\vol=e^{F/2}$ maps each of the two open branches bijectively onto $(0,1)$, which gives exactly one solution on each side of $0$.
+Non-congruence for $n\ge3$: a congruence $R_n(c_-)\to R_n(c_+)$ maps the vertex $S=\emptyset$ of $R_n(c_-)$ to a vertex of $R_n(c_+)$ and maps its edge directions to the edge directions there, preserving inner products. The Gram matrix at $S=\emptyset$ has all off-diagonal entries equal to $c_-$, and the Gram matrix at the image vertex is $D_\varepsilon G_n(c_+)D_\varepsilon$ up to permutation. By Lemma~\ref{lem:vertex}, $c_-=c_+$, which contradicts $c_-<0<c_+$. For $n=2$ the two rhombi are congruent, as follows. A rhombus with unit sides is determined up to congruence by the angle $\theta$ between two adjacent sides, and it has the angle $\pi-\theta$ at its other two vertices. So the rhombus with angle $\theta$ and the rhombus with angle $\pi-\theta$ are the same rhombus, and $\cos(\pi-\theta)=-\cos\theta$ gives $R_2(c)\cong R_2(-c)$.
+\end{proof}

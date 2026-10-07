@@ -1,0 +1,12 @@
+# Building manuscript CR-123-007
+
+Run `pdflatex manuscript.tex` twice in this directory.
+
+Library files used, relative to this directory:
+
+- `../../lib/preamble.tex`
+- `../../lib/lemmas.tex`
+- `../../lib/body/T1_5.tex`
+- `../../lib/refs.tex`
+
+Statement class: S01. Human review: none. Lean: not attempted.

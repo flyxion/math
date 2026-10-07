@@ -1,0 +1,12 @@
+\begin{theorem}[A sharp inequality]\label{thm:main}
+Let $n=4$. For every $c$ with $- \frac{1}{3}<c<1$ one has $\vol_nR_n(c)\le1$, with equality if and only if $c=0$, that is, if and only if $R_n(c)$ is the unit cube.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:spec}, $\vol_nR_n(c)=e^{F(c)/2}$ with $F=\ln\det G_n$.
+By Lemma~\ref{lem:dlog}, $F'$ has the sign of $-c$ on $(- \frac{1}{3},1)$.
+So $F$ is strictly increasing on $(- \frac{1}{3},0]$ and strictly decreasing on $[0,1)$.
+Since $F(0)=0$, we obtain $F(c)<0$ for every $c\ne0$.
+\end{proof}
+\begin{remark}
+The inequality is an instance of Hadamard's inequality~\cite{hadamard}: $|\det V|\le\prod_i\|v_i\|=1$ for the matrix $V$ with columns $v_i$.
+\end{remark}

@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\input{../../lib/preamble}
+\title{Asymptotic Equidistribution for the Minkowskian Cubic Rhombus in Dimension 3 (fractal, measurable, absorbing boundary conditions): Homotopical Proof}
+\author{Flyxion}
+\date{Release 1.0\\ Manuscript CR-060-048}
+\begin{document}
+\maketitle
+\begin{abstract}
+For $n=3$ an exact formula for $\det G_n(a/n)$ is given. This manuscript states and proves exactly this proposition and nothing more. The title names a Minkowskian geometry, a fractal topology, measurable regularity, absorbing boundary conditions and a homotopical technique. None of these enters the argument (Section~\ref{sec:params}). The proposition belongs to class S06, which 1744 manuscripts of this release share. This manuscript does not establish the result its title suggests. This manuscript does not support the hypothesis that it is an independent mathematical contribution.
+\end{abstract}
+
+\section{Introduction}
+The cubic rhombus $R_n(c)$ is the parallelotope with unit edges and constant pairwise edge inner product $c$. Its Gram matrix is $(1-c)I+cJ$, and every quantity below is computed from this one matrix. The classical background is the Gram determinant~\cite{gram} and Hadamard's inequality~\cite{hadamard}; see also~\cite{hj}.
+This manuscript proves one proposition about this family. The title of the manuscript promises more than the proposition delivers. This manuscript does not support the hypothesis that it is an independent mathematical contribution.
+
+\section{Setting}
+\input{../../lib/lemmas}
+
+\section{Result}
+\input{../../lib/body/T7_3}
+
+\section{Parameters carried in the title}\label{sec:params}
+\begin{center}
+\small
+\begin{tabular}{p{0.27\textwidth}p{0.13\textwidth}p{0.50\textwidth}}
+\toprule
+Parameter & Status & Role in the argument \\
+\midrule
+Dimension & Operative & The proposition is stated for dimension $3$. \\
+Contribution & Operative & The word ``equidistribution'' is retained from the title template. No distribution is considered. The proposition concerns a limit of determinants. \\
+Geometry: Minkowskian & Not used & Every statement concerns the Euclidean metric on $\R^n$. \\
+Topology: fractal & Not used & $R_n(c)$ is a convex polytope, hence contractible. No other topology is considered. \\
+Regularity: measurable & Not used & The object is a polytope. No function space on it is considered, and the label is carried as metadata. \\
+Boundary conditions: absorbing & Not used & No boundary value problem is posed. The word boundary in Theorem~\ref{thm:main} refers to the facets of the polytope, where it occurs. \\
+Technique: homotopical & Not used & The proof given is by elementary limits. The label is carried as metadata. \\
+\bottomrule
+\end{tabular}
+\end{center}
+Of the seven parameters of the title, two enter the argument and five do not. The five that do not are retained so that the title is complete.
+
+\section{Relation to the rest of the release}
+The proposition of this manuscript is in class S06 (scope: general n).
+In this release, 1744 manuscripts carry class S06. The principal member of this class in this release is manuscript CR-001-020. This manuscript restates that proposition under different title parameters.
+Counting manuscripts is therefore not counting results. This manuscript does not support the hypothesis that it is an independent mathematical contribution.
+
+\section{Verification status}
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+Item & Status \\
+\midrule
+Human review & none \\
+Independent scrutiny & none \\
+Lean formalization & not attempted \\
+Exact computer algebra checks tagged to this class & 5 of 5 passed \\
+Novelty of the proposition & not assessed \\
+\bottomrule
+\end{tabular}
+\end{center}
+The computer algebra checks confirm closed forms against direct computation for $n=2,\dots,8$ and confirm the symbolic identities in $n$. They do not address novelty or significance. Some results could have issues, and a correction would be recorded as a new version.
+
+\section{Statement of non-support}
+This manuscript proves a proposition about a determinant of a matrix of the form $(1-c)I+cJ$. It does not prove, support, or provide evidence for the claim that the proposition is an independent result, a new result, or a result of the kind the title suggests. This manuscript does not support the hypothesis that it is an independent mathematical contribution.
+
+\input{../../lib/refs}
+\end{document}

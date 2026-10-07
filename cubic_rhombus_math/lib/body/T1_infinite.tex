@@ -1,0 +1,9 @@
+\begin{theorem}[Existence in infinite dimension]\label{thm:main}
+Let $c\in\R$. There is an infinite system of unit vectors with pairwise inner product $c$ if and only if $0\le c\le1$.
+The infinite matrix $G(c)=(1-c)I+cJ$ defines a bounded operator on $\ell^2$ if and only if $c=0$.
+\end{theorem}
+\begin{proof}
+Necessity: every finite section of order $m\ge2$ has a positive semidefinite Gram matrix, so $1+(m-1)c\ge0$ by Lemma~\ref{lem:spec} for every $m$, which forces $c\ge0$; and $c\le1$ by the Cauchy--Schwarz inequality.
+Sufficiency: put $v_i=\sqrt c\,e_0+\sqrt{1-c}\,e_i$ for an orthonormal sequence $e_0,e_1,\dots$. Then $\|v_i\|^2=c+(1-c)=1$ and $\langle v_i,v_j\rangle=c$ for $i\ne j$.
+Boundedness: the vector $G(c)e_1$ has entry $c$ in every coordinate except the first, so it lies in $\ell^2$ only if $c=0$; and $G(0)=I$.
+\end{proof}

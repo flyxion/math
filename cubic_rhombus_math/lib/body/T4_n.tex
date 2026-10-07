@@ -1,0 +1,15 @@
+\begin{theorem}[Local stability of the cube]\label{thm:main}
+Let $n\ge2$ be an integer. As $c\to0$,
+\[
+\ln\vol_nR_n(c)=-\frac{n(n-1)}{4}\,c^2+\frac{n(n-1)(n-2)}{6}\,c^3+O(c^4).
+\]
+In particular the cube is a strict local maximizer of the volume among cubic rhombi, and $\frac{d^2}{dc^2}\ln\vol_nR_n(c)\big|_{c=0}=-\frac{n(n-1)}{2}$.
+\end{theorem}
+\begin{proof}
+Write $F=(n-1)\ln(1-c)+\ln(1+(n-1)c)$, so that $\ln\vol=F/2$.
+Expand $\ln(1-c)=-c-\frac{c^2}{2}-\frac{c^3}{3}+O(c^4)$ and $\ln(1+(n-1)c)=(n-1)c-\frac{(n-1)^2c^2}{2}+\frac{(n-1)^3c^3}{3}+O(c^4)$.
+The coefficient of $c$ in $F$ is $-(n-1)+(n-1)=0$.
+The coefficient of $c^2$ is $-\frac{n-1}{2}-\frac{(n-1)^2}{2}=-\frac{n(n-1)}{2}$.
+The coefficient of $c^3$ is $-\frac{n-1}{3}+\frac{(n-1)^3}{3}=\frac{n(n-1)(n-2)}{3}$.
+Dividing by $2$ gives the expansion of $\ln\vol$.
+\end{proof}

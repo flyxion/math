@@ -1,0 +1,45 @@
+\begin{definition}[Cubic rhombus]
+For an integer $n\ge2$ and $c\in\R$ let $G_n(c)=(1-c)I_n+cJ_n$, where $J_n$ is the $n\times n$ matrix of ones.
+A \emph{cubic rhombus} $R_n(c)$ is the parallelotope $\{\sum_i t_iv_i:0\le t_i\le1\}\subset\R^n$ spanned by unit vectors $v_1,\dots,v_n$ with $\langle v_i,v_j\rangle=c$ for $i\ne j$, that is, with Gram matrix $G_n(c)$.
+The case $c=0$ is the unit cube, $n=2$ gives a rhombus, and $n=3$ gives a rhombohedron.
+The name ``cubic rhombus'' is used in this corpus for this family. It is not claimed to be standard terminology.
+\end{definition}
+
+\begin{lemma}[Spectrum and volume]\label{lem:spec}
+The matrix $G_n(c)$ has eigenvalue $1+(n-1)c$ with eigenvector $\mathbf 1=(1,\dots,1)^\T$, and eigenvalue $1-c$ with multiplicity $n-1$ on $\mathbf 1^{\perp}$.
+Hence $\det G_n(c)=(1-c)^{n-1}(1+(n-1)c)$, the matrix is positive definite if and only if $-\tfrac1{n-1}<c<1$, and in that case $\vol_nR_n(c)=\sqrt{\det G_n(c)}$.
+\end{lemma}
+\begin{proof}
+$J\mathbf 1=n\mathbf 1$, so $G\mathbf 1=(1-c+nc)\mathbf 1=(1+(n-1)c)\mathbf 1$.
+If $x\perp\mathbf 1$ then $Jx=0$, so $Gx=(1-c)x$.
+These eigenspaces span $\R^n$, which gives the spectrum and the determinant, and positivity of both eigenvalues is the stated range.
+If $V$ is the matrix with columns $v_i$ then $G=V^\T V$ and $\vol_n=|\det V|=\sqrt{\det G}$.
+\end{proof}
+
+\begin{lemma}[Facets]\label{lem:facet}
+A facet of $R_n(c)$ is spanned by $n-1$ of the edge vectors, and its Gram matrix is the principal $(n-1)\times(n-1)$ submatrix of $G_n(c)$, which is $G_{n-1}(c)$.
+Its $(n-1)$-volume is $\sqrt{(1-c)^{n-2}(1+(n-2)c)}$, and the surface area of $R_n(c)$ is $2n$ times this number.
+\end{lemma}
+\begin{proof}
+Deleting a row and the matching column of $(1-c)I+cJ$ leaves $(1-c)I+cJ$ of order $n-1$. Apply Lemma~\ref{lem:spec} in dimension $n-1$. There are $2n$ facets, in $n$ parallel pairs.
+\end{proof}
+
+\begin{lemma}[Logarithmic derivative]\label{lem:dlog}
+On $(-\tfrac1{n-1},1)$ let $F(c)=\ln\det G_n(c)=(n-1)\ln(1-c)+\ln(1+(n-1)c)$. Then
+\[
+F'(c)=-\frac{n(n-1)\,c}{(1-c)\,(1+(n-1)c)},
+\]
+the denominator is positive, and so $F'$ has the sign of $-c$.
+\end{lemma}
+\begin{proof}
+$F'(c)=-\frac{n-1}{1-c}+\frac{n-1}{1+(n-1)c}=(n-1)\frac{(1-c)-(1+(n-1)c)}{(1-c)(1+(n-1)c)}=-\frac{n(n-1)c}{(1-c)(1+(n-1)c)}$.
+\end{proof}
+
+\begin{lemma}[Vertex Gram matrices]\label{lem:vertex}
+The vertices of $R_n(c)$ are the points $\sum_{i\in S}v_i$ for $S\subseteq\{1,\dots,n\}$. At the vertex $S$ the unit edge directions are $\varepsilon_iv_i$ with $\varepsilon_i=-1$ for $i\in S$ and $\varepsilon_i=+1$ otherwise, so their Gram matrix is $D_\varepsilon G_n(c)D_\varepsilon$ with $D_\varepsilon=\operatorname{diag}(\varepsilon)$.
+Suppose $n\ge3$ and that all off-diagonal entries of $D_\varepsilon G_n(c)D_\varepsilon$ equal one number $s$. Then $s=c$.
+For $n=2$ the conclusion fails: the vertices with $\varepsilon_1\varepsilon_2=-1$ give $s=-c$.
+\end{lemma}
+\begin{proof}
+The first statements are immediate from the definition. The off-diagonal entries are $\varepsilon_i\varepsilon_jc$. If $c=0$ then $s=0=c$. If $c\ne0$ put $p=s/c$, so $\varepsilon_i\varepsilon_j=p$ for all $i\ne j$. For distinct $i,j,k$ we have $\varepsilon_i\varepsilon_j\cdot\varepsilon_i\varepsilon_k=\varepsilon_j\varepsilon_k$, that is $p^2=p$, so $p=1$.
+\end{proof}

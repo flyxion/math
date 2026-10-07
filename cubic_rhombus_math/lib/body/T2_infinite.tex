@@ -1,0 +1,8 @@
+\begin{theorem}[A sharp inequality in the limit]\label{thm:main}
+For $c\in[0,1)$ let $V_n(c)=\vol_nR_n(c)$. Then $V_n(c)\le1$ for all $n$, and $\lim_{n\to\infty}V_n(c)=1$ if $c=0$ and $=0$ if $0<c<1$.
+In particular the supremum over $c\in[0,1)$ of the limiting volume is $1$, attained only at $c=0$.
+\end{theorem}
+\begin{proof}
+$V_n(c)^2=(1-c)^{n-1}(1+(n-1)c)\le(1-c)^{n-1}(1+nc)$, and for $0<c<1$ geometric decay beats linear growth, so the right side tends to $0$.
+The case $c=0$ is the cube. The bound $V_n\le1$ is Lemma~\ref{lem:dlog} together with $F(0)=0$.
+\end{proof}

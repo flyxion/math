@@ -1,0 +1,29 @@
+\begin{definition}[Cubic rhombus, finite sections, infinite systems]
+For an integer $n\ge2$ and $c\in\R$ let $G_n(c)=(1-c)I_n+cJ_n$, where $J_n$ is the matrix of ones.
+A \emph{cubic rhombus} $R_n(c)$ is the parallelotope in $\R^n$ spanned by unit vectors with pairwise inner product $c$.
+An \emph{infinite system} is a sequence $(v_i)_{i\ge1}$ of unit vectors in a real Hilbert space with $\langle v_i,v_j\rangle=c$ for $i\ne j$.
+Its finite sections are the systems $(v_i)_{i\le n}$.
+The name ``cubic rhombus'' is used in this corpus for this family. It is not claimed to be standard terminology.
+\end{definition}
+
+\begin{lemma}[Spectrum and volume]\label{lem:spec}
+$G_n(c)$ has eigenvalue $1+(n-1)c$ once, with eigenvector $\mathbf 1$, and eigenvalue $1-c$ with multiplicity $n-1$.
+Hence $\det G_n(c)=(1-c)^{n-1}(1+(n-1)c)$, positivity holds exactly for $-\tfrac1{n-1}<c<1$, and then $\vol_nR_n(c)=\sqrt{\det G_n(c)}$.
+\end{lemma}
+\begin{proof}
+$G\mathbf 1=(1+(n-1)c)\mathbf 1$, and $Gx=(1-c)x$ for $x\perp\mathbf 1$. If $V$ has columns $v_i$ then $G=V^\T V$ and $\vol_n=\sqrt{\det G}$.
+\end{proof}
+
+\begin{lemma}[Logarithmic derivative]\label{lem:dlog}
+$F(c)=\ln\det G_n(c)$ satisfies $F'(c)=-\dfrac{n(n-1)c}{(1-c)(1+(n-1)c)}$ on $(-\tfrac1{n-1},1)$.
+\end{lemma}
+\begin{proof}
+$F'(c)=-\frac{n-1}{1-c}+\frac{n-1}{1+(n-1)c}$, and the common denominator gives the stated form.
+\end{proof}
+
+\begin{lemma}[Vertex Gram matrices]\label{lem:vertex}
+At the vertex $S$ of $R_n(c)$ the Gram matrix of the unit edge directions is $D_\varepsilon G_n(c)D_\varepsilon$ with $\varepsilon_i=-1$ for $i\in S$ and $+1$ otherwise. If $n\ge3$ and all its off-diagonal entries equal a number $s$, then $s=c$.
+\end{lemma}
+\begin{proof}
+The off-diagonal entries are $\varepsilon_i\varepsilon_jc$. If $c\ne0$ put $p=s/c$. Then $p^2=\varepsilon_i\varepsilon_j\varepsilon_i\varepsilon_k=\varepsilon_j\varepsilon_k=p$ for distinct $i,j,k$, so $p=1$.
+\end{proof}

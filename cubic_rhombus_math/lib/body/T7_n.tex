@@ -1,0 +1,12 @@
+\begin{theorem}[Asymptotic volume]\label{thm:main}
+Let $n\ge2$ be an integer and $-\tfrac{n}{n-1}<a<n$, so that $c=a/n$ lies in the positivity range. Then
+\[
+\det G_n(a/n)=\Bigl(1-\frac an\Bigr)^{n-1}\Bigl(1+\frac{(n-1)a}{n}\Bigr).
+\]
+Moreover, for fixed $a>-1$, $\displaystyle\lim_{n\to\infty}\det G_n(a/n)=(1+a)e^{-a}$.
+\end{theorem}
+\begin{proof}
+Substitute $c=a/n$ in Lemma~\ref{lem:spec}.
+The condition $-\frac1{n-1}<\frac an<1$ is the stated range of $a$.
+For the limit, $(1-\frac an)^{n-1}=(1-\frac an)^n/(1-\frac an)\to e^{-a}$ and $1+\frac{(n-1)a}{n}\to1+a$. For $a>-1$ the value $c=a/n$ lies in the positivity range for all large $n$.
+\end{proof}
